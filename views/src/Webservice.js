@@ -69,4 +69,4 @@ var Webservice = function (_Service) {
 	};
 	this.Init();
 }
-window.webservice = new Webservice("ws://localhost:8082/echo");
+window.webservice = new Webservice("ws://localhost:8082/WebSocket");

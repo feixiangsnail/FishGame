@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"Config"
 	"Lib/Service"
-	"App"
+	"Drive/Http/Model"
 )
 
 var lof = fmt.Println
@@ -35,10 +35,10 @@ func HitMethod(f *FishInfo){
 	if captureRate >rad{            //鱼的捕获率与随机数的对比,大于随机数就是击落
 		isHit = true
 	}
-lof(f,"f")
+	lof(f,"f")
 
 	f.IsHit = isHit
-	App.Client.Send(f)
+	Drive_Http.Client.Send(f)
 }
 
 

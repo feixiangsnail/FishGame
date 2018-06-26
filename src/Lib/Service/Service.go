@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"Lib/Tool"
+	"github.com/satori/go.uuid"
 )
 
 var lof = fmt.Println
@@ -23,6 +24,10 @@ func (this *ServiceActin) Run(Content string ){
 	FunParams[0] = reflect.ValueOf(obj.Interface())
 	fv.Call(FunParams)
 
+}
+func NewClientID() string{
+	ClientID,_:=uuid.NewV4()
+	return ClientID.String()
 }
 func Register(Name string,Fun interface{}) interface{}{
 

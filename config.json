@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Disk",
+    "Drive": "Disk",
+    "Url": "D:/workspace/gameproject/NewGames/"
+  },
+  {
+    "Name": "DataBase",
+    "Drive": "MySQL",
+    "UserName": "root",
+    "UserPassword": "root",
+    "DataBase": "Game",
+    "IP": "127.0.0.1",
+    "Port": "3306",
+    "Pre": "Pre_"
+  },
+  {
+    "Name": "Service",
+    "Drive": "HTTP",
+    "Port": "8082",
+    "Host": "",
+    "WebSocket": "WebSocket"
+  },
+  {
+    "Name": "WeChat",
+    "Drive": "WeChat",
+    "AppID": "wxe25e3d936bba60e5",
+    "AppSecret": "8c1942788ba63b81b92e6de9f46d96ea",
+    "Service": "https://open.weixin.qq.com/connect/oauth2/",
+    "Url": "http://gs.inkdeer.cn/Service?Module=WeChat&Action=WeChat.Authorize"
+  }
+]

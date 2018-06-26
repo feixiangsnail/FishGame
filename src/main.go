@@ -3,14 +3,18 @@ package main
 import (
 
 	"fmt"
+	"Drive"
+	_ "Drive/Disk/Model"
+	_ "Drive/Http/Model"
 	"GameFunc"
-	"App"
 )
 
 var lof = fmt.Println
 
 func main() {
-
 	GameFunc.RegisterAll()
-	App.StartServer()
+	Drive.Init("D:/workspace/games/FishGame/")
+	select {}
+
+	//App.StartServer()
 }
