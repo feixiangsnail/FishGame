@@ -1,12 +1,11 @@
 package main
 
 import (
-
-	"fmt"
+	_ "Application/Game"
 	"Drive"
 	_ "Drive/Disk/Model"
 	_ "Drive/Http/Model"
-	_ "Application/Game"
+	"fmt"
 )
 
 var lof = fmt.Println

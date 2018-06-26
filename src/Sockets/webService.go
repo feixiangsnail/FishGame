@@ -2,11 +2,12 @@ package Sockets
 
 import (
 	// "../Lib/Service"
+	"Lib/Service"
 	"Lib/Tool"
 	"fmt"
-	"github.com/gorilla/websocket"
 	"net/http"
-	"Lib/Service"
+
+	"github.com/gorilla/websocket"
 )
 
 var lof = fmt.Println
@@ -18,9 +19,9 @@ var upgrader = websocket.Upgrader{
 	},
 }
 
+//MessageInfo 用于接收websocket参数
 type MessageInfo struct {
-
-	Action string `action`
+	Action string `json:"action"`
 }
 
 type WebSocketClientModel struct {
@@ -34,13 +35,14 @@ type WebSocketClientModel struct {
 	AllOnSend map[string]func(Connect *websocket.Conn)
 }
 
-func (this *WebSocketClientModel) Init(w http.ResponseWriter, r *http.Request) bool {
+//Init 初始化连接
+func (that *WebSocketClientModel) Init(w http.ResponseWriter, r *http.Request) bool {
 	conn, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		lof(err)
 		return false
 	}
-	this.Connect = conn
+	that.Connect = conn
 	lof("已经成功连接200")
 	return true
 
@@ -93,10 +95,8 @@ func (this *WebSocketClientModel) OnMessage() {
 		Mess := MessageInfo{}
 		Tool_Lib.Json_Object(Content, &Mess)
 
-		if Service_Lib.AllServiceActin[Mess.Action]!=nil{
+		if Service_Lib.AllServiceActin[Mess.Action] != nil {
 			Service_Lib.AllServiceActin[Mess.Action].Run(Content)
 		}
 	}
 }
-
-
