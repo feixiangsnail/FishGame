@@ -11,6 +11,7 @@ import (
 	"Sockets"
 	"Application/User/Model"
 	"Lib/Service"
+	"Application/User"
 )
 var lof = fmt.Println
 var Client Sockets.WebSocketClientModel
@@ -37,7 +38,10 @@ func (this *HttpMode_Drive) Init(){
 
 	this.HttpService()
 	this.WebSocketRun()
+
+	//Game_Control.RegisterAll()
 	go http.ListenAndServe(this.Host+":"+this.Port,nil)
+
 }
 
 func (this *HttpMode_Drive) GetObject(Url string,Data interface{}) interface{}{
@@ -69,6 +73,7 @@ func (this *HttpMode_Drive) WebSocketRun(){
 			return
 		}
 		go Client.OnMessage()
+		Client.Send(User)
 	})
 
 
@@ -76,10 +81,11 @@ func (this *HttpMode_Drive) WebSocketRun(){
 
 func (this *HttpMode_Drive) LoginUser(w http.ResponseWriter,r *http.Request) *User_Module.UserModel{
 	ID := InitID(w,r)
-	lof(ID,"ID")
-	//user:=User_Control.LoginUser(ID)
-	//return user
-	return nil
+
+	user:=User_Control.LoginUser(ID)
+
+	return user
+
 }
 func InitID(w http.ResponseWriter,r *http.Request)string{
 	MyCookie,err :=r.Cookie("ClientID")

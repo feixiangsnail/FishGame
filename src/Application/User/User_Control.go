@@ -26,5 +26,5 @@ func LoginUser(ID string) *User_Module.UserModel{
 	}
 	UserCount = UserCount+1
 	mutex.Unlock()
-	return LoginUser(ID)
+	return loginUser[ID]
 }

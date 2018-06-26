@@ -6,13 +6,13 @@ import (
 	"Drive"
 	_ "Drive/Disk/Model"
 	_ "Drive/Http/Model"
-	"GameFunc"
+	_ "Application/Game"
 )
 
 var lof = fmt.Println
 
 func main() {
-	GameFunc.RegisterAll()
+
 	Drive.Init("D:/workspace/games/FishGame/")
 	select {}
 
