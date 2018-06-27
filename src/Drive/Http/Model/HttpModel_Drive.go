@@ -63,6 +63,7 @@ func (this *HttpMode_Drive) HttpService() {
 		io.WriteString(w, "首页")
 	})
 }
+
 func (this *HttpMode_Drive) WebSocketRun() {
 	if this.WebSocketPath == "" {
 		return
@@ -72,11 +73,12 @@ func (this *HttpMode_Drive) WebSocketRun() {
 		User := this.LoginUser(w, r)
 		lof(User, "User")
 		Client = Sockets.WebSocketClientModel{}
-		if !Client.Init(w, r) {
+
+		if !Client.Init(User,w, r) {
 			return
 		}
-		go Client.OnMessage()
-		Client.Send(User)
+		go User.Client.OnMessage()
+		User.Client.Send(User)
 	})
 
 }

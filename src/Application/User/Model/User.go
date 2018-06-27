@@ -1,6 +1,6 @@
 package User_Module
 
-
+import "Application/Client/Interface"
 
 type UserModel struct {
 	ID        int                      `sql:"User_ID" json:"ID"`
@@ -10,4 +10,5 @@ type UserModel struct {
 	WeiXinID  string                   `sql:"User_WeChatID" json:"_"`
 	Src       string                   `sql:"User_Src" json:"src"`
 	RoomCard  int                      `sql:"User_RoomCard" json:"src"`
+	Client    ClientModule.ClientModel  `json:"_"`
 }

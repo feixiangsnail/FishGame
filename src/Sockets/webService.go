@@ -8,6 +8,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
+	"Application/User/Model"
 )
 
 var lof = fmt.Println
@@ -25,6 +26,7 @@ type MessageInfo struct {
 }
 
 type WebSocketClientModel struct {
+	User *User_Module.UserModel
 	Connect      *websocket.Conn
 	AllOnMessage map[string]func(Connect *websocket.Conn)
 	//打开触发事件
@@ -36,12 +38,14 @@ type WebSocketClientModel struct {
 }
 
 //Init 初始化连接
-func (that *WebSocketClientModel) Init(w http.ResponseWriter, r *http.Request) bool {
+func (that *WebSocketClientModel) Init(user *User_Module.UserModel, w http.ResponseWriter, r *http.Request) bool {
 	conn, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		lof(err)
 		return false
 	}
+	Client:=WebSocketClientModel{User:user,Connect:conn}
+	user.Client = &Client
 	that.Connect = conn
 	lof("已经成功连接200")
 	return true
@@ -63,7 +67,9 @@ func (this *WebSocketClientModel) Close() {
 
 //执行发送数据事件
 func (this *WebSocketClientModel) OnSend() {
+
 	for _, v := range this.AllOnSend {
+
 		v(this.Connect)
 	}
 }
