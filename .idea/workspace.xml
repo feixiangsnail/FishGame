@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fab35e44-766b-4fcd-a769-fb7c1c828090" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Application/Game.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Application/Game.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Drive/Http/Model.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Drive/Http/Model.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Game/Game_Control.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Game/Game_Control.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FishCapture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fishgame" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="fab35e44-766b-4fcd-a769-fb7c1c828090" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +14,7 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="9">
               <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
@@ -101,7 +89,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="350" />
     <option name="y" value="43" />
     <option name="width" value="1407" />
@@ -454,7 +442,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="9">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
