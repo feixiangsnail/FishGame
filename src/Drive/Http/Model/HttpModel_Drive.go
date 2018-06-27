@@ -6,7 +6,7 @@ import (
 	"Drive"
 	"Lib/Service"
 	"Lib/Tool"
-	"Sockets"
+	"Drive/webSocket/model"
 	"io"
 	"log"
 	"net/http"
@@ -14,7 +14,7 @@ import (
 )
 
 var lof = log.Println
-var Client Sockets.WebSocketClientModel
+var Client WebSocketModel.WebSocketClientModel
 
 type HttpMode_Drive struct {
 	Name          string `json:"Name"`
@@ -72,7 +72,7 @@ func (this *HttpMode_Drive) WebSocketRun() {
 	http.HandleFunc("/"+this.WebSocketPath, func(w http.ResponseWriter, r *http.Request) {
 		User := this.LoginUser(w, r)
 		lof(User, "User")
-		Client = Sockets.WebSocketClientModel{}
+		Client = WebSocketModel.WebSocketClientModel{}
 
 		if !Client.Init(User,w, r) {
 			return

@@ -4,6 +4,7 @@ import (
 	_ "Application/Game"
 	_ "Drive/Disk/Model"
 	_ "Drive/Http/Model"
+	_ "Drive/MySQL/Model"
 	"fmt"
 	"path/filepath"
 	"os"
@@ -15,8 +16,8 @@ var lof = fmt.Println
 
 func main() {
 
-	//Drive.Init("D:/workspace/games/FishGame/")
-	Drive.Init(getCurrentDirectory())
+	Drive.Init("D:/workspace/games/FishGame/")
+	//Drive.Init(getCurrentDirectory())
 	select {}
 }
 func getCurrentDirectory() string {

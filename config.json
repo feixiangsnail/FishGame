@@ -8,8 +8,8 @@
     "Name": "DataBase",
     "Drive": "MySQL",
     "UserName": "root",
-    "UserPassword": "root",
-    "DataBase": "Game",
+    "UserPassword": "123456",
+    "DataBase": "test",
     "IP": "127.0.0.1",
     "Port": "3306",
     "Pre": "Pre_"
