@@ -17,8 +17,29 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="124" column="40" lean-forward="true" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
+            <state relative-caret-position="517">
+              <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+              <folding>
+                <element signature="e#14#165#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.go" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/net/http/request.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4077">
+              <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ioutil.go" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/io/ioutil/ioutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="999">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,6 +59,7 @@
       <find>lof</find>
       <find>AllOnSend</find>
       <find>printl</find>
+      <find>body</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -93,9 +115,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="723" />
-    <option name="y" value="9" />
-    <option name="width" value="1093" />
+    <option name="x" value="362" />
+    <option name="y" value="18" />
+    <option name="width" value="1286" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -117,27 +139,6 @@
               <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FishGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FishGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Drive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FishGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Drive" type="462c0819:PsiDirectoryNode" />
-              <item name="MySQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FishGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Drive" type="462c0819:PsiDirectoryNode" />
-              <item name="MySQL" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,20 +213,20 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="723" y="9" width="1093" height="1053" extended-state="0" />
+    <frame x="362" y="18" width="1286" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10027855" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12834646" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15565032" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.114072494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -247,9 +248,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/Service/Service.go" />
-    <entry file="file://$PROJECT_DIR$/Sockets/webService.go" />
-    <entry file="file://$PROJECT_DIR$/main.go" />
     <entry file="file://$PROJECT_DIR$/GameFunc/gamefuncs.go" />
     <entry file="file://$PROJECT_DIR$/Sockets/webService.go" />
     <entry file="file://$PROJECT_DIR$/Lib/Service/Service.go" />
@@ -344,13 +342,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="5" selection-start-line="7" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/readme.txt" />
     <entry file="file://$PROJECT_DIR$/src/Sockets/webService.go" />
     <entry file="file://$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -469,10 +461,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Go/src/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="2936" column="5" selection-start-line="2936" selection-start-column="5" selection-end-line="2936" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/io/ioutil/ioutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/http/request.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4077">
+          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="124" column="40" lean-forward="true" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
+        <state relative-caret-position="517">
+          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding>
+            <element signature="e#14#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
