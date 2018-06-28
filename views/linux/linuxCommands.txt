@@ -1,0 +1,25 @@
+//卸载amazon
+sudo apt-get remove unity-webapps-common
+//vscode install
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt-get update
+sudo apt-get install ubuntu-make
+sudo umake ide visual-studio-code
+//git install
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+
+//获取权限
+sudo chmod -R 777 myResources
+//交叉编译golang
+linux
+GOOS=linux GOARCH=amd64 go build -ldflags "-w -s" -o main
+windows
+GOOS=windows GOARCH=amd64 go build -ldflags "-w -s" -o main
+mac
+GOOS=darwin GOARCH=amd64 go build -ldflags "-w -s" -o main
+//上传到远程服务器与从远程服务器下拉
+scp  -r /home/shaoxiaohu/test1  zhidao@192.168.0.1:/home/test2 
+scp  -r zhidao@192.168.0.1:/home/test2 /home/shaoxiaohu/test1
+scp  -r /home/janson/workspace/gotest/src/main.go root@172.104.32.98:/home/test
