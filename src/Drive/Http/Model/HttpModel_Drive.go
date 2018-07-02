@@ -7,7 +7,6 @@ import (
 	"Lib/Service"
 	"Lib/Tool"
 	"Drive/webSocket/model"
-	"io"
 	"log"
 	"net/http"
 	"reflect"
@@ -41,7 +40,7 @@ func (this *HttpMode_Drive) Init() {
 
 	this.HttpService()
 	this.WebSocketRun()
-	go http.ListenAndServe(this.Host+":"+this.Port, nil)
+	go log.Fatal(http.ListenAndServe(this.Host+":"+this.Port, nil))
 
 }
 
@@ -59,9 +58,10 @@ func (this *HttpMode_Drive) Set(Url string, Data interface{}) int {
 	return 666
 }
 func (this *HttpMode_Drive) HttpService() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		io.WriteString(w, "首页")
-	})
+	http.Handle("/", http.FileServer(http.Dir("./views/")))
+	//http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	//	io.WriteString(w, "首页")
+	//})
 }
 
 func (this *HttpMode_Drive) WebSocketRun() {
