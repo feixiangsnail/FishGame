@@ -3,9 +3,9 @@ package Drive_Disk
 import (
 	"Drive"
 	"reflect"
-	"fmt"
 	"Lib/Tool"
 	"io/ioutil"
+	"log"
 )
 
 type Disk struct{
@@ -37,8 +37,7 @@ func (this *Disk)  GetContent(Url string,)string{
 }
 //转换url
 func (this *Disk) GetUrl(URL string) string{
-	//u:=url
-	fmt.Println(this.Root+URL)
+	log.Println(this.Root+URL)
 	return this.Root+URL
 }
 //写入数据

@@ -10,12 +10,13 @@ import (
 	"os"
 	"strings"
 	"Drive"
+	"log"
 )
 
 var lof = fmt.Println
 
 func main() {
-
+	log.SetFlags(log.Lshortfile | log.LstdFlags)
 	Drive.Init("D:/workspace/games/FishGame/")
 	//Drive.Init(getCurrentDirectory())
 	select {}

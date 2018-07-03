@@ -1,4 +1,4 @@
-AllFishes=[]
+
 var Webservice = function (_Service) {
 	this.Service = _Service;
 	this.Init = function () {
@@ -70,3 +70,4 @@ var Webservice = function (_Service) {
 	this.Init();
 }
 window.webservice = new Webservice("ws://localhost:8082/WebSocket");
+// window.webservice = new Webservice("ws://172.104.32.98:8082/WebSocket");

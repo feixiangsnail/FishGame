@@ -18,6 +18,7 @@ var allDriveType = map[string]reflect.Type{}
 //所有驱动实体
 var allDrive = map[string]Drive_Base.Drive_Interface{}
 
+//var MysqlDrive *Drive_Http.MySQLModel
 //Init 初始化所有驱动
 func Init(URL string) {
 
@@ -27,7 +28,9 @@ func Init(URL string) {
 	Base.GetObject("config.json", &data)
 	for _, v := range data {
 		InitDrive(v)
+
 	}
+
 }
 
 //InitDrive 初始化驱动器
@@ -37,9 +40,15 @@ func InitDrive(Data map[string]interface{}) {
 		DriveItemBase := reflect.New(DriveItem).Interface().(Drive_Base.Drive_Interface)
 		DriveItemBase.InitData(Data)
 		allDrive[Tool_Lib.Convert_String(Data["Drive"])] = DriveItemBase
+
 	} else {
 		//lof(Data,"Data")
 	}
+}
+func GetDrive(DriveName string) (drive Drive_Base.Drive_Interface){
+	lof(allDrive,"alldrive")
+	drive = allDrive[DriveName]
+	return
 }
 
 //Register 注册所有的驱动

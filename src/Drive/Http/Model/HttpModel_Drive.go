@@ -4,12 +4,13 @@ import (
 	"Application/User"
 	"Application/User/Model"
 	"Drive"
+	"Drive/webSocket/model"
 	"Lib/Service"
 	"Lib/Tool"
-	"Drive/webSocket/model"
 	"log"
 	"net/http"
 	"reflect"
+	"Application/WebPage/Api"
 )
 
 var lof = log.Println
@@ -24,8 +25,6 @@ type HttpMode_Drive struct {
 
 func init() {
 	Drive.Register("HTTP", reflect.TypeOf(HttpMode_Drive{}))
-	log.SetFlags(log.Lshortfile | log.LstdFlags)
-	log.Println("加载http驱动成功")
 
 }
 
@@ -37,9 +36,9 @@ func (this *HttpMode_Drive) InitData(data map[string]interface{}) {
 	this.Init()
 }
 func (this *HttpMode_Drive) Init() {
-
 	this.HttpService()
 	this.WebSocketRun()
+	log.Println("server is running at"+this.Host+":"+this.Port)
 	go log.Fatal(http.ListenAndServe(this.Host+":"+this.Port, nil))
 
 }
@@ -59,9 +58,9 @@ func (this *HttpMode_Drive) Set(Url string, Data interface{}) int {
 }
 func (this *HttpMode_Drive) HttpService() {
 	http.Handle("/", http.FileServer(http.Dir("./views/")))
-	//http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-	//	io.WriteString(w, "首页")
-	//})
+	http.HandleFunc("/api/login",WebPageApi.Login)
+	http.HandleFunc("/api/register",WebPageApi.Register)
+
 }
 
 func (this *HttpMode_Drive) WebSocketRun() {
@@ -74,11 +73,11 @@ func (this *HttpMode_Drive) WebSocketRun() {
 		lof(User, "User")
 		Client = WebSocketModel.WebSocketClientModel{}
 
-		if !Client.Init(User,w, r) {
+		if !Client.Init(User, w, r) {
 			return
 		}
 		go User.Client.OnMessage()
-		User.Client.Send(User)
+		//User.Client.Send(User)
 	})
 
 }

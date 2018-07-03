@@ -8,6 +8,7 @@ import (
 
 var UserCount = 0
 var loginUser map[string]*User_Module.UserModel
+
 func init(){
 	loginUser = make(map[string]*User_Module.UserModel)
 
