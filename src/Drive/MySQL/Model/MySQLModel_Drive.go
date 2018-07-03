@@ -10,6 +10,7 @@ import (
 	"log"
 	"Application/User/Model"
 	"Drive"
+	"Lib/Service"
 )
 
 var lof = fmt.Println
@@ -64,7 +65,7 @@ func (this *MySQLModel) initMysql(){
 }
 
 //获取用户名和密码
-func (this *MySQLModel) FindUserPwd(username string,password string) (tempUser *User_Module.UserModel2){
+func (this *MySQLModel) FindUserPwd(username string,password string) (tempUser *User_Module.UserModel){
 
 
 	var id ,coins int
@@ -72,17 +73,27 @@ func (this *MySQLModel) FindUserPwd(username string,password string) (tempUser *
 	err := this.Db.QueryRow("select id,coins from fish_user where username=? and password=?", username,password).Scan(&id,&coins)
 
 	if err != sql.ErrNoRows {
-		tempUser =&User_Module.UserModel2{
+		var token = Service_Lib.NewClientID()
+		tempUser =&User_Module.UserModel{
 			ID:id,
 			Username:username,
-			Password:password,
 			Coins:coins,
+			Token:token,
 		}
+		this.UpdateToken(token,username,password)
 	}else{
 		tempUser = nil
 		log.Println("用户或者密码不正确")
 
 	}
+	return
+}
+
+//登录之后更新用户token
+func (this *MySQLModel) UpdateToken(token string,username string,password string) (isTrue bool){
+	log.Println("更新token")
+	_, err := this.Db.Exec(`UPDATE fish_user SET token=? WHERE username=? and password=?`,token,username,password)
+	Tool_Lib.Message_Check(err)
 	return
 }
 //查找用户是否存在
@@ -102,7 +113,7 @@ func (this *MySQLModel) FindUser(username string) (isExsit bool){
 }
 //创建用户
 func (this *MySQLModel)  CreateUser(user *User_Module.UserModel) (isSuccess bool){
-	_, err := this.Db.Exec("insert into fish_user(username,password,coins) values(?,?,?)", user.Username, user.Password,1000)
+	_, err := this.Db.Exec("insert into fish_user(username,password,coins) values(?,?,?)", user.Username, user.Password,10000)
 	if err!=nil{
 		log.Println(err,"创建用户失败")
 		isSuccess = false

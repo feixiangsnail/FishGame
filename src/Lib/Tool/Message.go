@@ -1,9 +1,11 @@
 package Tool_Lib
 
-import "fmt"
+import (
+	"log"
+)
 
 func Message_Check(err error){
 	if err!=nil{
-		fmt.Println(err)
+		log.Println(err)
 	}
 }

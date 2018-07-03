@@ -1,4 +1,4 @@
-package session
+package Service_Lib
 
 import (
 	"crypto/rand"
@@ -35,6 +35,7 @@ var sessionMap = make(map[string]*Session)
 
 func GetSession(w http.ResponseWriter, r *http.Request) (session *Session) {
 	cookie, _ := r.Cookie("SESSIONID")
+	log.Println(cookie,"cookie")
 	session = sessionMap[cookie.String()]
 	if session == nil {
 		cookie = &http.Cookie{Name: "SESSIONID", Value: generateSessionID()}

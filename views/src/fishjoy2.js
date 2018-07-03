@@ -123,6 +123,7 @@ game.init = function(images)
 
 game.startup = function()
 {
+	
 	var me = this;
 	this.container.removeChild(this.loader);
 	this.loader = null;
@@ -196,7 +197,9 @@ game.initUI = function()
 
 game.initPlayer = function()
 {
-	var coin = Number(this.params.coin) || 10000;
+	var userCoins = JSON.parse(sessionStorage.getItem("userInfo")).coins
+	console.log(userCoins,"usercoins")
+	var coin = Number(this.params.coin) || userCoins;
 	this.player = new ns.Player({id:"quark", coin:coin});
 };
 

@@ -8,7 +8,6 @@ import (
 
 	"Drive/MySQL/Model"
 
-
 )
 
 var lof = fmt.Println
@@ -26,9 +25,16 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	user := mySQLModel.FindUserPwd(username, password)
 
 
-
+	//
+	//rc := http.Cookie{
+	//	Value: "newuserID",
+	//	Name:  "ClientID",
+	//}
+	//http.SetCookie(w.(http.ResponseWriter), &rc)
 	if user != nil {
+
 		Tool_Lib.SendBack(200, "登录成功2", w, user)
+
 	} else {
 		Tool_Lib.SendBack(0, "用户名或密码错误", w, user)
 	}

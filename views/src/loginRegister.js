@@ -51,12 +51,15 @@ var app = new Vue({
                     password: this.password
                 },
                 dataType: "json",
-                timeout: 10000,
+                timeout: 30000,
                 success: function (d) {
                     console.log(d, "d");
                     if (d.Code == 200) {
-                      location.href = "http://localhost:8082/game.html"
-                       //window.location.href = "localhost:8082/game.html"
+                        console.log(document.cookie,"cookie")
+                        sessionStorage.setItem("userInfo",JSON.stringify(d.Data))
+                     location.href = "http://localhost:8082/game.html"
+                    
+                      
                     } else {
                         alert("用户名或密码错误")
                     }

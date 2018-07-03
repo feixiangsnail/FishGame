@@ -59,6 +59,7 @@ func (this *HttpMode_Drive) Set(Url string, Data interface{}) int {
 func (this *HttpMode_Drive) HttpService() {
 	http.Handle("/", http.FileServer(http.Dir("./views/")))
 	http.HandleFunc("/api/login",WebPageApi.Login)
+
 	http.HandleFunc("/api/register",WebPageApi.Register)
 
 }
@@ -68,14 +69,15 @@ func (this *HttpMode_Drive) WebSocketRun() {
 		return
 	}
 
-	http.HandleFunc("/"+this.WebSocketPath, func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/api/"+this.WebSocketPath, func(w http.ResponseWriter, r *http.Request) {
+
 		User := this.LoginUser(w, r)
-		lof(User, "User")
 		Client = WebSocketModel.WebSocketClientModel{}
 
 		if !Client.Init(User, w, r) {
 			return
 		}
+
 		go User.Client.OnMessage()
 		//User.Client.Send(User)
 	})
@@ -92,13 +94,16 @@ func (this *HttpMode_Drive) LoginUser(w http.ResponseWriter, r *http.Request) *U
 }
 func InitID(w http.ResponseWriter, r *http.Request) string {
 	MyCookie, err := r.Cookie("ClientID")
+
 	if err != nil && MyCookie != nil {
 		return MyCookie.Value
 	}
 	ID := Service_Lib.NewClientID()
+	log.Println(ID,"ID")
 	rc := http.Cookie{
-		Value: ID,
+		Value: "HelloworldIamId",
 		Name:  "ClientID",
+
 	}
 	http.SetCookie(w.(http.ResponseWriter), &rc)
 	return ID

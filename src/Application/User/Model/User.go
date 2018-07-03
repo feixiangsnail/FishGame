@@ -16,7 +16,7 @@ import "Application/Client/Interface"
 type UserModel struct {
 	ID        int                      `json:"id"`
 	Username     string                  `sql:"User_Name" json:"username"`
-	Password 	string 					`json:"password"`
+	Password 	string 					`json:"-"`
 	WeiXinID  string                   `sql:"User_WeChatID" json:"weixinid"`
 	Coins  int                      `sql:"User_RoomCard" json:"coins"`
 	Client    ClientModule.ClientModel  `json:"_"`
@@ -25,6 +25,7 @@ type UserModel struct {
 	RoomCard  int                      `sql:"User_RoomCard" json:"src"`
 	Sex       int                      `sql:"User_sex" json:"sex"`
 	Birthday  string                   `sql:"User_Birthday" json:"birthday"`
+	Token    string                    `json:"token"`
 }
 
 type UserModel2 struct {
