@@ -123,6 +123,41 @@ func (this *MySQLModel)  CreateUser(user *User_Module.UserModel) (isSuccess bool
 	}
 	return
 }
+
+//通过token获取获取用户名和密码
+func (this *MySQLModel) FindUserByToken(token string) (tempUser *User_Module.UserModel){
+
+	var username  string
+	var id ,coins int
+
+	err := this.Db.QueryRow("select username,id,coins from fish_user where token=? ", token).Scan(&username,&id,&coins)
+
+	if err != sql.ErrNoRows {
+		var token = Service_Lib.NewClientID()
+		tempUser =&User_Module.UserModel{
+			ID:id,
+			Username:username,
+			Coins:coins,
+			Token:token,
+		}
+
+	}else{
+		tempUser = nil
+		log.Println("查不到此token用户")
+
+	}
+	return
+}
+
+//通过token更新用户金币
+func (this *MySQLModel) UpdateCoinsByToken(token string,getCoin int) (isTrue bool){
+	log.Println("通过token更新用户金币")
+	_, err := this.Db.Exec(`UPDATE fish_user SET coins = coins+? WHERE token=?`,getCoin,token)
+	Tool_Lib.Message_Check(err)
+	return
+}
+
+
 func checkError(err error){
 	if err!=nil{
 		log.Fatal(err)

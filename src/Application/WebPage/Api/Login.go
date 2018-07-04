@@ -24,15 +24,12 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	var mySQLModel =Drive_Mysql.GetSqlDb()
 	user := mySQLModel.FindUserPwd(username, password)
 
-
-	//
-	//rc := http.Cookie{
-	//	Value: "newuserID",
-	//	Name:  "ClientID",
-	//}
-	//http.SetCookie(w.(http.ResponseWriter), &rc)
 	if user != nil {
-
+		rc := http.Cookie{
+			Value: user.Token,
+			Name:  "UserToken",
+		}
+		http.SetCookie(w.(http.ResponseWriter), &rc)
 		Tool_Lib.SendBack(200, "登录成功2", w, user)
 
 	} else {

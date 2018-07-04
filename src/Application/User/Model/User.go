@@ -14,18 +14,17 @@ import "Application/Client/Interface"
 //}
 
 type UserModel struct {
-	ID        int                      `json:"id"`
-	Username     string                  `sql:"User_Name" json:"username"`
+	ID        int                      	`json:"id"`
+	Username     string                 `sql:"User_Name" json:"username"`
 	Password 	string 					`json:"-"`
-	WeiXinID  string                   `sql:"User_WeChatID" json:"weixinid"`
-	Coins  int                      `sql:"User_RoomCard" json:"coins"`
-	Client    ClientModule.ClientModel  `json:"_"`
-	Name      string                   `sql:"User_Name" json:"Name"`
-	Src       string                   `sql:"User_Src" json:"src"`
-	RoomCard  int                      `sql:"User_RoomCard" json:"src"`
-	Sex       int                      `sql:"User_sex" json:"sex"`
-	Birthday  string                   `sql:"User_Birthday" json:"birthday"`
-	Token    string                    `json:"token"`
+	WeiXinID  string                   	`sql:"User_WeChatID" json:"weixinid"`
+	Coins  int                      	`sql:"User_RoomCard" json:"coins"`
+	Client    ClientModule.ClientModel  `json:"-"`
+	Src       string                   	`sql:"User_Src" json:"src"`
+	Sex       int                      	`sql:"User_sex" json:"sex"`
+	Birthday  string                   	`sql:"User_Birthday" json:"birthday"`
+	Token    string                    	`json:"token"`
+	Name     string 					`json:"-"`
 }
 
 type UserModel2 struct {

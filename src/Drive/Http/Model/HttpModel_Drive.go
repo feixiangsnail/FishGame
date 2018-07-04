@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"reflect"
 	"Application/WebPage/Api"
+	"Drive/MySQL/Model"
 )
 
 var lof = log.Println
@@ -70,8 +71,25 @@ func (this *HttpMode_Drive) WebSocketRun() {
 	}
 
 	http.HandleFunc("/api/"+this.WebSocketPath, func(w http.ResponseWriter, r *http.Request) {
+		token, err := r.Cookie("UserToken")
+		var User *User_Module.UserModel
+		if err==nil{
+			//登录玩家
+			log.Println("登录玩家")
+			User=Drive_Mysql.GetSqlDb().FindUserByToken(token.Value)
+			if User ==nil{
 
-		User := this.LoginUser(w, r)
+				//临时玩家
+				log.Println("临时玩家")
+				User = this.LoginUser(w, r)
+			}
+		}else{
+			//临时玩家
+			log.Println("临时玩家")
+			User = this.LoginUser(w, r)
+		}
+
+
 		Client = WebSocketModel.WebSocketClientModel{}
 
 		if !Client.Init(User, w, r) {
@@ -99,7 +117,7 @@ func InitID(w http.ResponseWriter, r *http.Request) string {
 		return MyCookie.Value
 	}
 	ID := Service_Lib.NewClientID()
-	log.Println(ID,"ID")
+
 	rc := http.Cookie{
 		Value: "HelloworldIamId",
 		Name:  "ClientID",

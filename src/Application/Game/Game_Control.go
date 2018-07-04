@@ -6,6 +6,7 @@ import (
 	"Config"
 	"Lib/Service"
 	"Drive/Http/Model"
+	"Drive/MySQL/Model"
 )
 
 var lof = fmt.Println
@@ -14,7 +15,9 @@ type FishInfo struct{
 	TypeIndex int `json:"typeIndex"` //鱼的类型
 	IsHit bool `json:"isHit"`	//是否击落
 	Action string `json:"action"` //回调的方法
-	Power float64 `json:"power"` //炮弹威力
+	Power int `json:"power"` //炮弹威力
+	Token string `json:"token"` //用户token
+
 }
 func init(){
 	RegisterAll()
@@ -34,15 +37,22 @@ func HitMethod(f *FishInfo){
 	//var cononRate float64 = f.Power
 	var rad = rand.Float64()
 	var isHit = false
+	var getScore = -f.Power
 	if captureRate >rad{            //鱼的捕获率与随机数的对比,大于随机数就是击落
 		isHit = true
+		getScore+=Config.FishCoins[Config.FishIndexStr[f.TypeIndex]]*f.Power
 	}
-
+	//var getScore = Config.FishCoins[f.TypeIndex]-
 	f.IsHit = isHit
-	lof(f,"f")
-	Drive_Http.Client.Send(f)
-}
 
+	Drive_Http.Client.Send(f)
+	updateUserInfo(f.Token,getScore)
+}
+func updateUserInfo(token string,getScore int) (isSuccess bool){
+	isSuccess = Drive_Mysql.GetSqlDb().UpdateCoinsByToken(token,getScore)
+	
+	return
+}
 
 
 

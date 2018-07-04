@@ -2,7 +2,7 @@
 (function () {
 
 	var ns = Q.use("fish"), game = ns.game;
-
+	var userInfo = JSON.parse(sessionStorage.getItem("userInfo"))
 	var Bullet = ns.Bullet = function (props) {
 		this.power = 0;
 		this.speedX = 0;
@@ -77,8 +77,9 @@
 				continue;
 			}
 			if (web.hitTestObject(fish, true)) {
-			
-				webservice.Send({ "id": i, "typeIndex":fish.typeIndex,"action":"HitMethod","power":Config.power})
+				
+				console.log(userInfo.token)
+				webservice.Send({ "id": i, "typeIndex":fish.typeIndex,"action":"HitMethod","power":Config.power,"token":userInfo.token})
 				Config.HitMethod = function (obj) {
 					
 					if(!obj.isHit) return;

@@ -8,9 +8,9 @@
     "Name": "DataBase",
     "Drive": "MySQL",
     "UserName": "root",
-    "UserPassword": "asaiw48!skdhw1223",
+    "UserPassword": "123456",
     "DataBase": "chess",
-    "IP": "172.104.32.98",
+    "IP": "localhost",
     "Port": "3306",
     "Pre": "Pre_"
   },

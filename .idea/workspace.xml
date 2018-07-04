@@ -3,27 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="fab35e44-766b-4fcd-a769-fb7c1c828090" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Application/Game.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Application/Game.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Application/User.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Application/User.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Application/User/Model.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Application/User/Model.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Application/WebPage/Api.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Application/WebPage/Api.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Drive.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Drive.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Drive/Disk/Model.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Drive/Disk/Model.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Drive/Http/Model.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Drive/Http/Model.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Drive/MySQL/Model.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Drive/MySQL/Model.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Drive/webSocket/model.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Drive/webSocket/model.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Lib/Service.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Lib/Service.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Lib/Tool.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/Lib/Tool.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Game/Game_Control.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Game/Game_Control.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/User/Model/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/User/Model/User.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/WebPage/Api/Login.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/WebPage/Api/Login.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demo/login2/session/session.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/login2/session/session.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Drive/MySQL/Model/MySQLModel_Drive.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drive/MySQL/Model/MySQLModel_Drive.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lib/Tool/Message.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lib/Tool/Message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/src/Webservice.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/src/Webservice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/src/fishjoy.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/src/fishjoy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/src/fishjoy2.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/src/fishjoy2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/src/loginRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/src/loginRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/src/views/Bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/src/views/Bullet.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,95 +32,53 @@
       <file leaf-file-name="HttpModel_Drive.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-              <folding>
-                <element signature="e#20#194#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/WebPage/Api/Register.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lib/Service/Service.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/WebPage/Api/Login.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User_Control.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/User/User_Control.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLModel_Drive.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Drive/MySQL/Model/MySQLModel_Drive.go">
+      <file leaf-file-name="Game_Control.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Application/Game/Game_Control.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql.go" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/database/sql/sql.go">
+      <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Config/config.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="1361" column="14" selection-start-line="1361" selection-start-column="14" selection-end-line="1361" selection-end-column="14" />
+            <state relative-caret-position="108">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lib/Tool/Message.go">
+      <file leaf-file-name="Drive_Control.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drive/Drive_Control.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webSocketClient.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQLModel_Drive.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Drive/MySQL/Model/MySQLModel_Drive.go">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="11" selection-start-column="8" selection-end-column="16" />
-              <folding>
-                <element signature="e#18#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/User/Model/User.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webUtil.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lib/Tool/webUtil.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <caret column="19" selection-start-column="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -181,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/Drive/MySQL/Model/MySQL_Drive.go" />
         <option value="$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go" />
         <option value="$PROJECT_DIR$/views/src/Webservice.js" />
-        <option value="$PROJECT_DIR$/src/Application/Game/Game_Control.go" />
         <option value="$PROJECT_DIR$/src/web/ceshi.html" />
         <option value="$PROJECT_DIR$/src/Demo/login1.go" />
         <option value="$PROJECT_DIR$/src/Demo/login2/UserModel/userModel.go" />
@@ -198,16 +150,17 @@
         <option value="$PROJECT_DIR$/src/Drive/Drive_Control.go" />
         <option value="$PROJECT_DIR$/src/main.go" />
         <option value="$PROJECT_DIR$/src/Drive/Disk/Model/DiskModel.go" />
-        <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/src/Lib/Service/Session.go" />
         <option value="$PROJECT_DIR$/src/Lib/Tool/webUtil.go" />
-        <option value="$PROJECT_DIR$/src/Application/WebPage/Api/Login.go" />
-        <option value="$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go" />
         <option value="$PROJECT_DIR$/src/Application/WebPage/Api/Register.go" />
-        <option value="$PROJECT_DIR$/src/Application/User/Model/User.go" />
         <option value="$PROJECT_DIR$/src/Application/User/User_Control.go" />
         <option value="$PROJECT_DIR$/src/Lib/Tool/Message.go" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/src/Application/WebPage/Api/Login.go" />
+        <option value="$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go" />
+        <option value="$PROJECT_DIR$/src/Application/User/Model/User.go" />
         <option value="$PROJECT_DIR$/src/Drive/MySQL/Model/MySQLModel_Drive.go" />
+        <option value="$PROJECT_DIR$/src/Application/Game/Game_Control.go" />
       </list>
     </option>
   </component>
@@ -221,9 +174,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="219" />
-    <option name="y" value="62" />
-    <option name="width" value="1487" />
+    <option name="x" value="60" />
+    <option name="y" value="55" />
+    <option name="width" value="1515" />
     <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -234,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,6 +334,21 @@
               <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FishGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Drive" type="462c0819:PsiDirectoryNode" />
+              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FishGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Drive" type="462c0819:PsiDirectoryNode" />
+              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FishGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FishGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,7 +369,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,14 +461,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28867102" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25599128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -516,21 +485,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15260416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2805526" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -546,12 +515,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Sockets/webService.go" />
-    <entry file="file://$PROJECT_DIR$/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/src/Webservice.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -577,13 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/net/http/request.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4077">
-          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -651,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Game/Game_Control.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Demo/login2/UserModel/User.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -716,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Client/client_Control.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Drive/Http/Http.go">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -740,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Drive/Drive_Control.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -761,23 +696,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="43" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lib/Tool/webUtil.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="513">
           <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
@@ -796,65 +717,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/User/Model/User.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lib/Service/Service.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="594">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/WebPage/Api/Login.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/User/User_Control.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-          <folding>
-            <element signature="e#20#194#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Go/src/database/sql/sql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="36423">
           <caret line="1361" column="14" selection-start-line="1361" selection-start-column="14" selection-end-line="1361" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Client/client_Control.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/http/request.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="372" column="43" selection-start-line="372" selection-start-column="43" selection-end-line="372" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/http/cookie.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lib/Tool/Message.go">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="11" selection-start-column="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
-          </folding>
+          <caret column="16" selection-start-column="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/WebPage/Api/Login.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/User/Model/User.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/User/User_Control.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drive/Drive_Control.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drive/webSocket/model/webSocketClient.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Drive/Http/Model/HttpModel_Drive.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Drive/MySQL/Model/MySQLModel_Drive.go">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Game/Game_Control.go">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
         </state>
       </provider>
     </entry>

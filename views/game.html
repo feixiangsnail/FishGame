@@ -52,36 +52,40 @@
 		}
 
 		/* tologin */
-
-		
 	</style>
 
 	<title>HTML5捕鱼达人网页游戏源代码下载 - JS代码网</title>
 
+	<script>
 
+		if (!JSON.parse(sessionStorage.getItem("userInfo"))) {
+			location.href = "http://localhost:8082/index.html"
+		}
+
+	</script>
 
 </head>
 
 <body>
-	
-		
-		<div id="gameBox" v-if="togame">
 
 
-			<div id="outer">
-				<div id="middle">
-					<div id="container" style="position:relative;width:980px;height:545px;top:-50%;margin:0 auto;"></div>
-					<div id="msg"></div>
-				</div>
+	<div id="gameBox" v-if="togame">
+
+
+		<div id="outer">
+			<div id="middle">
+				<div id="container" style="position:relative;width:980px;height:545px;top:-50%;margin:0 auto;"></div>
+				<div id="msg"></div>
 			</div>
-			<div id="fps" style="position:absolute;top:0;left:0;color:#fff;"></div>
 		</div>
+		<div id="fps" style="position:absolute;top:0;left:0;color:#fff;"></div>
+	</div>
 
 </body>
 
 <script type="text/javascript" src="js/quark.base-1.0.0.alpha.min.js"></script>
 <script type="text/javascript" src="fishjoy.game.js"></script>
- <script type="text/javascript" src="src/Config.js"></script>
+<script type="text/javascript" src="src/Config.js"></script>
 <script type="text/javascript" src="src/Webservice.js"></script>
 <script type="text/javascript" src="src/R.js"></script>
 <script type="text/javascript" src="src/Utils.js"></script>
